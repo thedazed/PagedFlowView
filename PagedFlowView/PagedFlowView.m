@@ -117,10 +117,10 @@
                     cell.alpha = 1 - (delta / _pageSize.width) * (1 - _minimumPageAlpha);
                     
                     CGFloat pageScale = 1 - (delta / _pageSize.width) * (1 - _minimumPageScale);
-                    cell.layer.transform = CATransform3DMakeScale(pageScale, pageScale, 1);
+                    //cell.layer.transform = CATransform3DMakeScale(pageScale, pageScale, 1);
                 } else {
                     cell.alpha = _minimumPageAlpha;
-                    cell.layer.transform = CATransform3DMakeScale(_minimumPageScale, _minimumPageScale, 1);
+                    //cell.layer.transform = CATransform3DMakeScale(_minimumPageScale, _minimumPageScale, 1);
                 }
                 [UIView commitAnimations];
             }
